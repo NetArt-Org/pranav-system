@@ -10,7 +10,14 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        formbg: '#F9F9F9',
+        formborder: '#7F7F7F',
+        primary:'#FEDB03',
+        btnBorder:'#CBAE00'
       },
+      width: {
+        'half': '48%',
+      }
     },
   },
   plugins: [],

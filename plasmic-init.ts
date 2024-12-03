@@ -1,5 +1,6 @@
 'use client';
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import contactForm from "./components/contactForm"
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
@@ -11,3 +12,8 @@ export const PLASMIC = initPlasmicLoader({
   // Disable for production to ensure you render only published changes.
   preview: true,
 })
+
+PLASMIC.registerComponent(contactForm,{
+  name:"contactForm",
+  props: {}
+});
